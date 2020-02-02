@@ -1,11 +1,11 @@
 h2 {
 	text-align: center;
+	text-color:blue;
 }
 span{
 	color: red;
 }
-
 form {										 
-	margin: 0 auto; 
+	margin: 0 auto;
 	width: 600px; 
 }
