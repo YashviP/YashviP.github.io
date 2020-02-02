@@ -1,0 +1,82 @@
+<html> 
+<head> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="val.js" >
+
+</script>
+</head> 
+
+<body> 
+
+<h2> Registration Form </h2>		 
+<form name="RegForm" onsubmit = "return validation()" method="post"> 
+	<fieldset>
+		<legend> User Personal Information</legend> 
+
+		<label>First Name :</label><br>
+		<input type="text" name="FName">
+		<span class="error"><p id="name_error"></p></span>
+
+		<label><br>Last Name :</label><br>
+		<input type="text" name="LName">
+		<span class="error"><p id="lname_error"></p></span>
+
+
+		<label>Age :</label><br>
+		<input type="number" name="age">
+		<span class="error"><p id="age_error"></p></span>
+
+		<label>Gender :</label><br> 
+		<input type="radio" name="gender" value="male" checked> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+ 		<input type="radio" name="gender" value="other"> Other<br><br>
+
+ 		<label>Phone No.:</label><br>
+ 		<input type="text" name="phone">
+ 		<span class="error"><p id="phone_error"></p></span>
+
+ 		<label>E-mail Address:</label><br>
+ 		<input type="text" name="EMail">
+ 		<span class="error"><p id="email_error"></p></span>
+
+		<label>Address :</label><br>
+		<textarea name="Address" rows="5" cols="30"></textarea>
+		<span class="error"><p id="add_error"></p></span>
+	
+		<label>SELECT YOUR COURSE</label><br>
+		<select name="course">
+    	<option value="Btech">Btech</option>
+    	<option value="Mtech">Mtech</option>
+    	<option value="Mca">Mca</option>
+    	<option value="Mba">Mba</option>
+  		</select>
+		<br><br>
+
+		<label>Technology</label><br>
+		<input type="checkbox" name="tech1" value="C">C<br>
+  		<input type="checkbox" name="tech2" value="C++">C++<br>
+  		<input type="checkbox" name="tech3" value="Java">Java<br>
+  		<input type="checkbox" name="tech4" value="Python">Python<br>
+  		<input type="checkbox" name="tech5" value="js">Java Script<br>
+  		<input type="checkbox" name="tech6" value="Css">CSS<br>
+  		<input type="checkbox" name="tech7" value="Html">HTML<br>
+  		<input type="checkbox" name="tech8" value="ror">Ruby On Rails<br>
+  		<input type="checkbox" name="tech9" value="php">PHP<br>
+  		<input type="checkbox" name="tech10" value="Jquery">Jquery<br>
+  		<br><br>
+
+		<label>Password:</label><br>
+		<input type="password" name="Password"> 
+		<span class="error"><p id="pass_error"></p></span>
+
+		<label>Confirm Password:</label><br>
+		<input type="password" name="confirmPassword"></p>
+		<span class="error"><p id="conf_error"></p></span>
+
+		<input type="submit" value="Submit" name="Submit">
+	</fieldset>
+	
+</form> 
+</body> 
+</html> 
+
